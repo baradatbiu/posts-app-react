@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__btns {
+  display: flex;
+}
+
+.post__btns button {
+  margin-left: 15px;
+}
+
+.post-enter {
+  transform: translateX(-350px);
+}
+
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+
+.post-exit {
+  opacity: 1;
+}
+
+.post-exit-active {
+  transform: translateX(-350px);
+  transition: all 500ms ease-in;
+}
+
+.pagination {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__page {
+  padding: 6px 10px;
+  cursor: pointer;
+  border: 1px solid teal;
+  border-right: none;
+  transition: all 0.3s;
+}
+
+.pagination__page:last-child {
+  border-right: 1px solid teal;
+}
+
+.pagination__page--current,
+.pagination__page:hover {
+  background-color: teal;
+  color: #fff;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.navbar__links {
+  margin-left: auto;
+}
+
+.navbar__links a,
+.navbar__links button {
+  margin-left: 20px;
+}
