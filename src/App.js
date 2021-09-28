@@ -8,8 +8,7 @@ import "./styles/App.css";
 function App() {
   const [isAuth, setIsAuth] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  console.log();
-  console.log();
+
   useEffect(() => {
     if (localStorage.getItem("auth")) {
       setIsAuth(true);
